@@ -9,6 +9,7 @@
 <body>
 	<header>
 		<div class="col-xs-3">
+			<%= link_to root_path, :class => 'logo' do %>
 			<div class="circle">
 				<br />
 				Apa
@@ -17,12 +18,13 @@
 				<br />
 				Kita
 			</div>
+			<% end %>
 		</div>
 		<div class="col-xs-4 slogan">
 			Kotak saran virtual untuk pemerintah. Dari kita untuk kita.
 		</div>
 		<div class="col-xs-5 links">
-			<%= link_to 'Contribute', '#' %>
+			<%= link_to 'Contribute', new_quote_path %>
 			<%= link_to 'About', '#' %>
 		</div>
 	</header>
@@ -37,7 +39,7 @@
 <div id="footer">
 	<div class="container">
 		<div class="col-xs-6">
-			<%= link_to "Klik aku kalau mau tahu lebih banyak lagi", "#", :class => 'next-quote' %>  
+			<%= link_to "Apa kata yang lain?", root_path, :class => 'next-quote' %>  
 		</div>
 		<div class="col-xs-6 footer-blurb">
 			Proudly built by <a href"https://www.facebook.com/mayanovarini"> Maya Novarini</a>
