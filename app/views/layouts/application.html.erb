@@ -11,9 +11,11 @@
 		<div class="col-xs-3">
 			<div class="circle">
 				<br />
-				Indonesia
+				Apa
 				<br />
-				Gimana
+				Kata
+				<br />
+				Kita
 			</div>
 		</div>
 		<div class="col-xs-4 slogan">
@@ -28,7 +30,20 @@
 
 	<br class="clear" />
 
-<%= yield %>
+<div class="container">
+	<%= yield %>
+</div>
+
+<div id="footer">
+	<div class="container">
+		<div class="col-xs-6">
+			<%= link_to "Klik aku kalau mau tahu lebih banyak lagi", "#", :class => 'next-quote' %>  
+		</div>
+		<div class="col-xs-6 footer-blurb">
+			Proudly built by <a href"https://www.facebook.com/mayanovarini"> Maya Novarini</a>
+		</div>
+	</div>
+</div>	
 
 </body>
 </html>
