@@ -23,9 +23,10 @@
 		<div class="col-xs-4 slogan">
 			Kotak saran virtual untuk pemerintah. Dari kita untuk kita.
 		</div>
-		<div class="col-xs-5 links">
-			<%= link_to 'Contribute', new_quote_path %>
-			<%= link_to 'About', '#' %>
+		<div class="col-xs-5 links contribout">
+			<%= link_to 'Tulis opinimu', new_quote_path, :class => 'contribute' %>
+			<br />
+			<%= link_to 'Tentang Kita', about_path, :class => 'about' %>
 		</div>
 	</header>
 	<hr />
@@ -44,7 +45,7 @@
 <div id="footer">
 	<div class="container">
 		<div class="col-xs-6">
-			<%= link_to "Apa kata yang lain?", root_path, :class => 'next-quote' %>  
+			<%= link_to "Apa pendapat yang lain tentang bagaimana menjadikan Indonesia lebih baik?", root_path, :class => 'next-quote' %>  
 		</div>
 		<div class="col-xs-6 footer-blurb">
 			Proudly built by <a href"https://www.facebook.com/mayanovarini"> Maya Novarini</a>
