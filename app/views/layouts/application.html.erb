@@ -20,10 +20,10 @@
 			</div>
 			<% end %>
 		</div>
-		<div class="col-xs-4 slogan">
+		<div class="col-xs-4 hidden-xs slogan">
 			Kotak saran virtual untuk pemerintah. Dari kita untuk kita.
 		</div>
-		<div class="col-xs-5 links contribout">
+		<div class="col-xs-5 col-xs-offset-1 col-sm-offset-0 col-sm-5 links contribout">
 			<!-- Button trigger modal -->
   			<%= link_to 'Tulis Opinimu', '#', :data => {:toggle => 'modal', :target => '#myModal'} %>
   			<br />
@@ -43,8 +43,9 @@
         <%= simple_form_for Quote.new do |f| %>
         <div class="modal-body">
          	
-				<%= f.input :saying %>
-				<%= f.input :author %>
+				<%= f.input :saying, :label => "Bagaimana menurutmu Indonesia bisa menjadi lebih baik?", :placeholder => "Pendidikan bebas biaya sampai jenjang universitas" %>
+				<br />
+				<%= f.input :author, :label => "Siapa namamu? Beneran deh, kita perlu tahu siapa pemilik ide keren di atas!", :placeholder => 'Maya Novarini' %>
 				<br />
 				<%= f.submit 'Create', :class => 'btn btn-danger' %>
 			
@@ -72,10 +73,10 @@
 
 <div id="footer">
 	<div class="container">
-		<div class="col-xs-6">
-			<%= link_to "Apa pendapat yang lain tentang bagaimana menjadikan Indonesia lebih baik?", root_path, :class => 'next-quote' %>  
+		<div class="col-xs-12 col-sm-6">
+			<%= link_to "Pendapat yang lain untuk Indonesia lebih baik?", root_path, :class => 'next-quote' %>  
 		</div>
-		<div class="col-xs-6 footer-blurb">
+		<div class="col-xs-12 col-sm-6 footer-blurb">
 			Proudly built by <a href"https://www.facebook.com/mayanovarini"> Maya Novarini</a>
 		</div>
 	</div>

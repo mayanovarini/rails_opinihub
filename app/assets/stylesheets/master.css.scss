@@ -70,6 +70,11 @@ h2 {
   font-family: 'MuseoSlab500Italic', sans-serif;
 }
 
+h2 span {
+  color: #dddddd;
+  font-family: 'museo_slab500', sans-serif;
+}
+
 .next-quote {
   color:#f84342;
   font-family: 'museo_slab500', sans-serif;
@@ -86,4 +91,18 @@ h2 {
 
 .logo:hover {
   text-decoration:none;
+}
+
+@media (max-width: 750px) {
+  .footer-blurb {
+    text-align: left;
+  }
+}
+
+.modal {
+  font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+}
+
+::selection {
+  background-color: #f84342;
 }
